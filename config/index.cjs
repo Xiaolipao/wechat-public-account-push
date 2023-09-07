@@ -47,6 +47,36 @@ const USER_CONFIG = {
         { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
+     {
+      // 想要发送的人的名字
+      name: '宝贝',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'o33qQ6TlZQsVqmU5KqGDJ4c8ak7M',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'BetG9_ba5JiYTdE41-MZAf6hKYf5cO8nbnAhyIgqLYk',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '10-28',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '宝贝', year: '1994', date: '10-28',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '李四', year: '1996', date: '09-31',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-07-23' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2023-10-02' },
+      ],
+    },
   ],
 
 
